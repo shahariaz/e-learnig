@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Dependency directories
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# MongoDB data directory
+data/
+
+# React build output
+client/build/
+
+# Node.js server build output
+server/build/
+
+# Visual Studio Code workspace settings file
+.code-workspace
