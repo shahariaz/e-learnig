@@ -1,0 +1,71 @@
+Register:
+Endpoint: /register
+Method: POST
+Controller: authController.register
+Payload: { "name": "John Doe", "email": "john@example.com", "password": "password" }
+Login:
+Endpoint: /login
+Method: POST
+Controller: authController.login
+Payload: { "email": "john@example.com", "password": "password" }
+Logout:
+Endpoint: /logout
+Method: POST
+Controller: authController.logout
+Teacher Routes:
+Get Pending Homework Requests:
+Endpoint: /teacher/pending-homework-requests
+Method: GET
+Controller: teacherController.getPendingHomeworkRequests
+Approve Homework Request:
+Endpoint: /teacher/approve-homework-request
+Method: POST
+Controller: teacherController.approveHomeworkRequest
+Payload: { "submissionId": "submission_id" }
+Get Approved Homework History:
+Endpoint: /teacher/approved-homework-history
+Method: GET
+Controller: teacherController.getApprovedHomeworkHistory
+Get Courses:
+Endpoint: /teacher/courses
+Method: GET
+Controller: teacherController.getCourses
+Get Course Details:
+Endpoint: /teacher/courses/:courseId
+Method: GET
+Controller: courseController.getCourseDetails
+Student Routes:
+Get Enrolled Courses:
+Endpoint: /student/courses
+Method: GET
+Controller: studentController.getEnrolledCourses
+Get Course Details:
+Endpoint: /student/courses/:courseId
+Method: GET
+Controller: courseController.getCourseDetails
+Submit Homework:
+Endpoint: /student/submit-homework
+Method: POST
+Controller: studentController.submitHomework
+Payload: { "unitId": "unit_id", "lessonId": "lesson_id", "image": "image_url" }
+Get Completed Units and Lessons:
+Endpoint: /student/completed-units-lessons
+Method: GET
+Controller: studentController.getCompletedUnitsLessons
+Parent Routes:
+Get Children and Their Performance:
+Endpoint: /parent/children
+Method: GET
+Controller: parentController.getParentChildren
+Get Child Performance:
+Endpoint: /parent/children/:childId/performance
+Method: GET
+Controller: parentController.getChildPerformance
+Get Enrolled Courses for Child:
+Endpoint: /parent/children/:childId/courses
+Method: GET
+Controller: parentController.getChildEnrolledCourses
+Get Course Details for Child:
+Endpoint: /parent/children/:childId/courses/:courseId
+Method: GET
+Controller: courseController.getCourseDetails
