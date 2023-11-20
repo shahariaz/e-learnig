@@ -1,0 +1,49 @@
+{
+  "title": "Introduction to Programming",
+  "description": "Learn the fundamentals of programming with this introductory course.",
+  "teachers": ["teacherId1", "teacherId2"],
+  "units": ["unitId1", "unitId2"],
+  "thumbnail": {
+    "public_id": "thumbnailId",
+    "url": "https://example.com/thumbnail.jpg"
+  },
+  "demoUrl": "https://example.com/demo",
+  "courseData": [
+    {
+      "videoUrl": "https://example.com/video1",
+      "videoThumbnail": "https://example.com/thumbnail1.jpg",
+      "title": "Getting Started",
+      "videoSections": "Introduction",
+      "description": "An overview of the course and what to expect.",
+      "videoLength": "10:30",
+      "links": [
+        {
+          "title": "Additional Resource",
+          "url": "https://example.com/resource1"
+        },
+        {
+          "title": "Practice Exercise",
+          "url": "https://example.com/exercise1"
+        }
+      ]
+    },
+    {
+      "videoUrl": "https://example.com/video2",
+      "videoThumbnail": "https://example.com/thumbnail2.jpg",
+      "title": "Variables and Data Types",
+      "videoSections": "Basic Concepts",
+      "description": "Understanding variables and different data types in programming.",
+      "videoLength": "15:45",
+      "links": [
+        {
+          "title": "Documentation",
+          "url": "https://example.com/docs"
+        },
+        {
+          "title": "Example Code",
+          "url": "https://example.com/example"
+        }
+      ]
+    }
+  ]
+}
